@@ -1,7 +1,4 @@
 export default async (req, res) => {
-  if (req.method !== "POST") {
-    return res.status(405).send("Method not allowed");
-  }
   try {
     let body = "";
     req.on("data", (chunk) => {
